@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flip Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/flaticon.css"> -->
+  <link rel="stylesheet" href="assets/css/boxicons.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/magnific-popup.min.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/odometer.min.css"> -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style1.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .flip-card {
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front
+{
+    position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 1000px;
+      overflow: hidden;
+}
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #111;
+      color: white;
+    }
+
+    .flip-card-back {
+      background-color: #241f1f;
+      color: rgb(255, 255, 255);
+      transform: rotateY(180deg);
+      padding: 20px;
+    }
+    .flip-card-back h5{
+        color: yellow;
+     
+        margin-bottom: 8px;
+    }
+
+    .flip-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-title {
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <header class="text-center py-5 bg-dark shadow">
+        <h1 class="display-5 fw-bold text-danger">Our Club Arena</h1>
+        <p class="text-muted-custom">Explore the top-notch arena of our sports club</p>
+        <a href="index copy.html" class="btn btn-outline-danger mt-2">Home</a>
+      </header>
+<center>
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <!-- Repeat this col-md-3 block for each card -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <a href="">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/img/truf/saturn.png" alt="TRUF SATURN">
+                  </div>
+                  <div class="flip-card-back" style="background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),  url('./assets/img/truf/saturn.png') center center;">
+                    <h5 class="card-title">TRUF SATURN</h5>
+                    <p>Durable, multi-sport synthetic turf with natural feel and high traction.</p>
+                  </div>
+                </div>
+              </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <a href="">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/img/truf/luna.png" alt="TRUF LUNA">
+                  </div>
+                  <div class="flip-card-back" style="background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),  url('./assets/img/truf/luna.png') center center;">
+                    <h5 class="card-title">TRUF LUNA</h5>
+                    <p>Premium synthetic turf for intensive play with superior cushioning.</p>
+                  </div>
+                </div>
+              </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <a href="">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/img/truf/sun.png" alt="TRUF SUN">
+                  </div>
+                  <div class="flip-card-back" style="background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),  url('./assets/img/truf/sun.png') center center;">
+                    <h5 class="card-title">TRUF SUN</h5>
+                    <p>Versatile turf ideal for outdoor sports with vibrant appearance.</p>
+                  </div>
+                </div>
+              </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <a href="">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/img/truf/mercury.png" alt="TRUF MERCURY">
+                  </div>
+                  <div class="flip-card-back" style="background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),  url('./assets/img/truf/mercury.png') center center;">
+                    <h5 class="card-title">TRUF MERCURY</h5>
+                    <p>Engineered for high footfall areas with excellent durability.</p>
+                  </div>
+                </div>
+              </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <a href="">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/img/truf/bask.jpg" alt="Basketball">
+                  </div>
+                  <div class="flip-card-back" style="background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),  url('./assets/img/truf/bask.jpg') center center;">
+                    <h5 class="card-title">BASKETBALL COURT</h5>
+                    <p>Outdoor court with pro-grade flooring and lighting setup.</p>
+                  </div>
+                </div>
+              </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <a href="">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/img/truf/badmintion.webp" alt="Badminton">
+                  </div>
+                  <div class="flip-card-back" style="background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),  url('./assets/img/truf/bad.jpg') center center;">
+                    <h5 class="card-title">BADMINTON COURT</h5>
+                    <p>Non-slip surface for fast-paced play and shock absorption.</p>
+                  </div>
+                </div>
+              </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <a href="">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/img/truf/swim.png" alt="Swimming Pool">
+                  </div>
+                  <div class="flip-card-back" style="background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),  url('./assets/img/truf/swim.png') center center;">
+                    <h5 class="card-title">SWIMMING POOL</h5>
+                    <p>Hygienic, temperature-controlled pool for training and recreation.</p>
+                  </div>
+                </div>
+              </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <a href="">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/img/truf/go-kart.avif" alt="Go-Kart">
+                  </div>
+                  <div class="flip-card-back" style="background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),  url('./assets/img/truf/go-kart.avif') center center;">
+                    <h5 class="card-title">GO-KART</h5>
+                    <p>High-speed racing track with safety features and thrill.</p>
+                  </div>
+                </div>
+              </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</center>
+  <footer class="footer-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <p>© 10Sportsclub is proudly owned by <a style="color: red;"
+              href="https://www.instagram.com/man_i_made?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Manikandan</a>
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <ul class="social">
+            <li><a href=""><img src="assets/img/social/instagram.png" alt="" width="30px"></a></li>
+            <li><a href=""><img src="assets/img/social/whatsapp.png" alt="" width="30px"></a></li>
+            <li><a href=""><img src="assets/img/social/facebook.png" alt="" width="28px"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
